@@ -1,63 +1,68 @@
-⭐ Power BI Projects
+📊 U.S. Heavy Haul Truck Market – Power BI Dashboard & Forecasting Analysis
 
-This repository contains my hands-on Power BI dashboards and analytics work. Each project demonstrates real-world problem-solving using data modeling, Power Query transformations, and DAX-based insights.
+This project presents a complete end-to-end analysis of the U.S. Heavy Haul Truck Market, starting from raw data forecasting in Excel to building an interactive analytics dashboard in Power BI. The goal is to visualize market trends, segment performance, and future growth insights for decision-making.
 
-🔧 Skills Demonstrated
+🔧 Project Workflow
+1. Data Preparation (Excel)
 
-Data Cleaning & Transformation (Power Query)
+Cleaned and structured historical U.S. heavy haul truck market data.
 
-Data Modeling (Star Schema, Relationships)
+Applied forecasting logic to estimate market size for upcoming years.
 
-DAX (Measures, Calculated Columns)
+Performed segment-wise and region-wise breakdowns.
 
-KPI Creation & Business Insights
+Ensured consistency across units, categories, and year formats.
 
-Interactive Dashboard Development
+2. Forecasting Model
 
-Report Optimization & Publishing
+Used a time-series–based forecasting method to estimate future market values.
 
-📂 Projects Included
+Calculated YoY growth, CAGR, and future demand outlook.
 
-(Rename/update these based on your actual project files)
+Built segment-level projections for better market understanding.
 
-1. Sales Performance Dashboard
+📊 Power BI Dashboard Overview
+Key Visuals & Insights
 
-Cleaned raw data and built optimized data model.
+Market Size Trend (Historical + Forecast)
+Line chart showing actual vs. forecasted values.
 
-Created KPIs for revenue, profit, and YoY trends.
+CAGR & YoY Growth KPIs
+KPI cards to highlight overall market performance.
 
-Added product-wise and region-wise insights.
+Segment-wise Revenue Breakdown
+Bar/column charts comparing different heavy haul truck segments.
 
-2. Customer Segmentation Analysis
+Regional Market Distribution (U.S.)
+Map or bar chart showing state/region dominance.
 
-Used RFM segmentation model.
+Future Market Projection
+Forecast chart highlighting growth trajectory.
 
-Visualized customer value buckets.
+🧮 DAX Measures Used
 
-Highlighted churn and retention behavior.
+(Adjust these if yours differ)
 
-3. Marketing Campaign Insights Dashboard
+Total Market Size = SUM(Market[Value])
 
-Combined multi-channel marketing data.
+YoY Growth = DIVIDE([Current Year] – [Previous Year], [Previous Year])
 
-Built metrics: CTR, CPC, ROI, conversions.
+Forecast Value (Custom Measure)
 
-Identified best and worst-performing campaigns.
+**CAGR = ( (End/Start) ^ (1/Years) ) – 1 **
+
+Segment Contribution % = DIVIDE([Segment Value], [Total Market Size])
+
+🎯 Purpose of This Dashboard
+
+To give stakeholders a clear, interactive view of the U.S. heavy haul truck market, including historical trends, segment performance, and future demand potential. This dashboard helps in strategic planning, investment decisions, and industry forecasting.
 
 🛠 Tools Used
 
-Power BI Desktop
+Microsoft Excel → Data cleaning + forecasting
+
+Power BI Desktop → Data modeling + DAX + dashboard
 
 Power Query
 
-DAX
-
-Excel / CSV
-
-Python (when preprocessing required)
-
-🎓 Certifications
-
-Microsoft Power BI Data Analyst (PL-300)
-
-Marketing Analytics – IIT Kharagpur (Python + SQL)
+DAX Measures
